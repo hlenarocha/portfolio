@@ -39,12 +39,14 @@
         </div>
       </div>
     </nav>
-
+    
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./picture(1).png" alt="Helena Rocha profile picture">
+      <div class="quote-display">
+        <!--CITAÇÕES-->
       </div>
-
+      <div class="section__pic-container">
+        <img src="./picture(1).png" alt="Helena Rocha profile picture" class="me">
+      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello! I'm</p>
         <h1 class="title">Helena Rocha</h1>
@@ -52,7 +54,7 @@
         <div class="btn-container">
           <button class="btn btn-color-2" onclick="window.open('./Helena V D Rocha CV.pdf')">
           Download CV</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
           Contact Info</button>
         </div>
         <div id="socials-container">
@@ -60,8 +62,12 @@
           onclick="location.href='https://linkedin.com/in/helena-vd-rocha'" >
           <img src="./github.png" alt="My GitHub profile" class="icon" 
           onclick="location.href='https://github.com/hlenarocha'" >
+          <img src="./youtube.png" alt="My YouTube channel" class="icon" 
+          onclick="location.href='https://www.youtube.com/channel/UCBbOfSPTkb-iWbQyzBmHp-Q'">
         </div>
+        
       </div>
+      
     </section>
 
     <section id="about">
@@ -69,24 +75,29 @@
         <h1>About Me</h1>
         <div class="section-container">
           <div class="section__pic-container">
-            <img src="" alt="Profile picture" class="about-pic">
+            <img src="./hackathon.JPG" alt="Profile picture" class="about-pic">
           </div>
+          <p class="legenda">I am the first girl from the left to the right. This is a record of a hackathon hosted by Copel last year, in which my team 'Enemies of Clean Code' secured the 7th position out of 45 registered teams. The experience proved to be very productive, as it required aligning teamwork and communication to reach the competition's final.</p>
 
-          <div class="about-details-container">
+
+          <div class="about-details-container about-text">
             <div class="about-containers">
               <div class="details-container">
-                <img src="./exp.png" alt="Experience icon" class="icon">
-                <h3>Experience</h3>
-                <p>-----</p>
+                <img src="./edu.png" alt="Education icon" class="icon icon-about">
+                <h3>Education</h3>
+                <p>Second-year Software Engineering student at the State University of Ponta Grossa.</p>
               </div>
               <div class="details-container">
-                <img src="./edu.png" alt="Education icon" class="icon">
-                <h3>Education</h3>
-                <p>Software Engineering Student <br> at Universidade Estadual de Ponta Grossa (UEPG). <br> </p>
+                <img src="./exp.png" alt="Experience icon" class="icon icon-about">
+                <h3>Experience</h3>
+                <p>I still don't have experience in the development field, but as a student, I dedicate myself every day to securing a first opportunity.</p>
               </div>
             </div>
             <div class="text-container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus doloremque quidem laborum nemo consectetur a ullam illum reprehenderit, tempora, perferendis ducimus fugit facere. Vitae enim fuga quas dignissimos delectus?</p>
+              <p>I am Brazilian and was born in the countryside of São Paulo into a family with limited financial means. With my enrollment at the Fundação Bradesco school and the guidance of my parents, I came to understand that <strong>education is a powerful tool for changing realities</strong>. </p>
+              <p><br> Therefore, I dedicated myself to, by the end of high school, entering a public university and rewriting my story with more opportunities and resources.
+
+                I earned my spot at the State University of Ponta Grossa, in the Software Engineering program, which I chose due to my interest in technology. I believe that technology, much like education, is a profoundly impactful instrument, enabling me to contribute to a <strong>more humane and just world</strong>.</p>
             </div>
           </div>
         </div>
@@ -133,14 +144,14 @@
                 <img src="./skills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Java</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img src="./skills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Python</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               
@@ -149,29 +160,29 @@
 
           <div class="details-container">
             <h2 class="experience-sub-title">Soft Skills</h2>
-            <div class="article-container">
-              <article>
+            <div class="article-container article-container-2">
+              <article class="article-softskills">
                 <img src="./softskills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Communication</h3>
                   <p>I can express myself clearly both verbally and in writing, and to actively listen to others.</p>
                 </div>
               </article>
-              <article>
+              <article class="article-softskills">
                 <img src="./softskills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Teamwork</h3>
                   <p>I'm able to collaborate and work productively with others.</p>
                 </div>
               </article>
-              <article>
+              <article class="article-softskills">
                 <img src="./softskills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Problem Solving</h3>
                   <p>I have the ability to identify, analyze and solve problems using a logical and creative approach.</p>
                 </div>
               </article>
-              <article>
+              <article class="article-softskills">
                 <img src="./softskills.png" alt="Experience icon" class="icon">
                 <div>
                   <h3>Resilience</h3>
@@ -194,34 +205,27 @@
         <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="" alt="Project 1" class="project-img">
+            <img src="./game.png" alt="RPG AI Govern" class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title">RPG AI Govern</h2>
+          <p><strong>[IN DEVELOPMENT]</strong> AI govern is a Role-playing game which consists in a fictional future where people don't have patience to choose their leaders. Based on this, an AI has been programmed to logically decide the best paths to social well-being.</p>
+
           <div class="btn-container">
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hlenarocha/Personal'">GitHub</button>
           </div>
+
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="" alt="Project 2" class="project-img">
+            <img src="./calorie.png" alt="Calorie counter" class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="experience-sub-title project-title">Calorie Counter</h2>
+          <p>A calorie tracker that takes as input the calories from each meal and the calories burned during physical exercise, returning the remaining calories in relation to a predefined total calorie count.</p>
           <div class="btn-container">
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hlenarocha/projects-HTML-CSS-JS/tree/main/projeto2-CalorieCounter'">GitHub</button>
           </div>
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="" alt="Project 3" class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-            <button class="btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
-          </div>
-        </div></div>
+        </div>
       </div>
       <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
     </section>

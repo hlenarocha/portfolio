@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: rgb(152, 47, 179);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181,181,181);
@@ -72,6 +72,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: rgb(152, 47, 179);
 }
 
 .logo:hover {
@@ -158,12 +159,13 @@ a:hover {
 }
 
 /* SECTION PROFILE */
-img {
-  border-radius: 50%;
-  width: 200px;
-  height: 210px;
-}
 
+.me {
+  border-radius: 50%;
+  width: 263px;
+  height: 288px;
+  margin: auto 30px;
+}
 
 section {
   padding-top: 4vh;
@@ -172,6 +174,7 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
+
 
 .section-container {
   display: flex;
@@ -243,6 +246,7 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1, .btn-color-2 {
@@ -254,7 +258,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(152, 47, 179);
   color: white;
 }
 
@@ -278,6 +282,10 @@ section {
 
 #about {
   position: relative;
+}
+
+.about-text {
+  margin-left: -40px
 }
 
 .about-containers {
@@ -333,7 +341,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85,85,85);
+  color: rgb(152, 47, 179);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -362,6 +370,8 @@ article {
   gap: 0.5rem;
 }
 
+
+
 article .icon {
   cursor: default;
 }
@@ -387,12 +397,13 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: rgb(152, 47, 179);
 }
 
 .project-btn {
   color: black;
-  border: rgb(163, 163, 163);
+  border:  rgb(2, 2, 2) 0.1rem solid;
+  margin-top: 30px;
 }
 
 /* CONTACT SECTION */
@@ -446,4 +457,37 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.quote-display {
+  position: absolute;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  
+  color: rgb(0, 0, 0);
+  padding: 4px;
+}
+
+.legenda {
+  display: flex;
+  margin-top: 590px;
+  margin-left: -470px;
+  text-align: center;
+  color:rgb(168, 168, 168);
+  
+}
+
+.icon-about {
+  cursor: default;
+}
+
+.article-softskills {
+  width: 20rem;
+}
+
+h1 {
+  color: rgb(93, 22, 110);
 }
